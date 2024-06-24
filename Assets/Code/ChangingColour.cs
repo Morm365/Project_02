@@ -24,9 +24,7 @@ public class ChangingColour : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    
-
-
+   
 
 
     void Update()
