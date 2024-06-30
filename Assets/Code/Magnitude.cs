@@ -14,9 +14,27 @@ public class Magnitude : MonoBehaviour
 
     public Text text1;
 
+
+    public float distantion;
+
+
     void Update()
     {
         vector1 = point1.position - point2.position;     //Calculating the position difference vector
         text1.text = vector1.magnitude + "And" + Vector3.Distance(point1.position, point2.position);        //Text update
+    }
+
+
+    void OnDrawGizmos()
+    {
+
+        distantion = Vector3.Distance(point1.position, point2.position);
+
+
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawLine(point1.position, point2.position);
+
+
     }
 }

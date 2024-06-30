@@ -5,6 +5,13 @@ using UnityEngine;
 public class GreenSlime : Slime
 {
 
+    void Start()
+    {
+        Debug.Log("Green Slime Attack");
+        Debug.Log("Green Slime Walk");
+        Debug.Log("Green Slime Looks");
+
+    }
 
 
 

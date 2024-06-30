@@ -22,7 +22,7 @@ public class Normalisation : MonoBehaviour
 
 
 
-        point1.position = Vector3.Normalize(target.position) * 8;
+        point1.position = Vector3.Normalize(target.position) * 40;
 
         text1.text = target.position + "and" + point1.position;
 

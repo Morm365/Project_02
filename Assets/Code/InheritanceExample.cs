@@ -7,7 +7,9 @@ using UnityEngine;
     public class Slime : MonoBehaviour
     {
 
-        [SerializeField]
+    protected int cell = 1;
+
+    [SerializeField]
 
         private float speed;
 
@@ -21,11 +23,20 @@ using UnityEngine;
 
        public void Look()
        {
-
-
             Debug.Log("Slime is looking at you");
-
        }
 
+     public virtual void run()
+     {
+        Debug.Log("Slime is rinning");
+     }
 
+    public virtual void attack()
+    {
+        Debug.Log("Slime is attacking");
     }
+
+    
+
+
+}
